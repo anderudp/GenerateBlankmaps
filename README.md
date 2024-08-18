@@ -2,16 +2,16 @@
 This library automates the generation of blank maps in the format required by [Blankmap Studio](https://github.com/anderudp/BlankmapStudio). It uses Numba to accelerate image processing on CUDA-capable machines.
 
 ## Usage
-### 1. Collect PNG locator maps of matching resolution for the desired region into an arbitrary folder
-![locator maps in folder](docs/maps-orig.png)
-
-The script is largely pre-configured for the locator map scheme published on Wikimedia Commons, such as [these ones for the United States](https://commons.wikimedia.org/wiki/Category:SVG_locator_maps_of_states_of_the_United_States_(location_map_scheme)). 
-
-### 2. Clone this repository into the folder
+### 1. Clone this repository into an arbitrary folder
 ```bash
 cd <your folder>
 git clone https://github.com/anderudp/GenerateBlankmaps
 ```
+
+### 2. Collect PNG locator maps of matching resolution for the desired region into the project folder
+![locator maps in folder](docs/maps-orig.png)
+
+The script is largely pre-configured for the locator map scheme published on Wikimedia Commons, such as [these ones for the United States](https://commons.wikimedia.org/wiki/Category:SVG_locator_maps_of_states_of_the_United_States_(location_map_scheme)). 
 
 ### 3. Configure `generate_blankmap.py` to your needs
 ```python
