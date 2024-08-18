@@ -5,7 +5,7 @@ This library automates the generation of blank maps in the format required by [B
 ### 1. Clone this repository into an arbitrary folder
 ```bash
 cd <your folder>
-git clone https://github.com/anderudp/GenerateBlankmaps
+git clone https://github.com/anderudp/GenerateBlankmaps .
 ```
 
 ### 2. Collect PNG locator maps of matching resolution for the desired region into the project folder
