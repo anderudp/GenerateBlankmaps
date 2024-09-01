@@ -81,6 +81,7 @@ if __name__ == "__main__":
     # Get background for superregion
     img = cv2.cvtColor(cv2.imread(ims[0], cv2.IMREAD_COLOR), cv2.COLOR_BGR2RGB)
     filtered_img = get_filtered_image(img, bg_filtered_color, bg_threshold, set_white=False, invert_selection=True)
+    filtered_img = get_filtered_image(filtered_image, area_color, bg_threshold, set_white=False, invert_selection=True)
     cv2.imwrite(f"{save_to}/Background.png", cv2.cvtColor(filtered_img, cv2.COLOR_BGR2RGB))
     
     # Generate JSON
